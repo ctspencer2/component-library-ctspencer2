@@ -1,27 +1,24 @@
-body {
-    background-color: midnightblue;
-}
 
 /* Button Style */
 .button {
     display:inline-block;
     padding:0.35em 1.2em;
-    border:0.1em solid #FFFFFF;
+    border:0.1em solid #000000;
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
     box-sizing: border-box;
     text-decoration:none;
     font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:#FFFFFF;
+    font-weight:500;
+    color:#000000;
     text-align:center;
     transition: all 0.2s;
 }
 
 /* Hover Button State */
   .button:hover {
-    color: #000000;
-    background-color: #FFFFFF;
+    color: #ffffff;
+    background-color: #000000;
   }
 
 
@@ -41,7 +38,158 @@ body {
 /* Navbar Styles */
   .logo {
     text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2em;
   }
+
+  .logo:hover {
+    color: rgb(236, 89, 148);
+  }
+
+  html, body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  p {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .container {
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+  }
+
+  .header {
+    display: flex;
+    padding: 12px 42px;
+    border-radius: 0 0 12px 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+  #nav-toggler, 
+  .nav-toggler-label {
+    display: none;
+  }
+
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0 0 0 auto;
+  }
+
+  .nav-link, nav-link:visited {
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 250ms all ease;
+  }
+
+  .nav-link:hover {
+    color: rgb(236, 89, 148);
+  }
+
+
+  /* @media (hover: hover) {
+    .nav-link:hover
+    .nav-link:active {
+      background-color: #666;
+      color: #f2f2f2;
+    }
+  } */
+
+  @media screen and (max-width: 991px) {
+    .nav-list {
+      flex-basis: 100%;
+      margin-top: 10px;
+      justify-content: space-around;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: 250ms all ease;
+    }
+  }
+
+  .nav-toggler-label {
+		display:     block;
+		position:    relative;
+		width:       25px;
+		height:      25px;
+		margin-left: auto;
+	}
+
+	.nav-toggler-label span {
+		position:   absolute;
+		top:        50%;
+		left:       50%;
+		border-top: 2px solid #666;
+		width:      100%;
+		transition: 550ms all ease;
+	}
+
+	.nav-toggler-label span:first-of-type {
+		transform: translate3d(-50%, calc(-50% - 8px), 0);
+	}
+
+	.nav-toggler-label span:nth-of-type(2) {
+		transform: translate3d(-50%, -50%, 0);
+	}
+
+	.nav-toggler-label span:nth-of-type(3) {
+		transform: translate3d(-50%, calc(-50% + 8px), 0);
+	}
+
+	#nav-toggler:checked + label span:first-of-type {
+		transform: translate3d(-50%, 0, 0) rotate(45deg);
+	}
+
+	#nav-toggler:checked + label span:nth-of-type(3) {
+		transform: translate3d(-50%, 0, 0) rotate(-45deg);
+	}
+
+	#nav-toggler:checked + label span:nth-of-type(2) {
+		width: 1px;
+	}
+
+	#nav-toggler:checked + label + .nav-list {
+		max-height: 300px;
+		opacity:    1;
+	}
+
+@media screen and (max-width: 575px) {
+	.nav-list {
+		flex-flow: column wrap;
+	}
+
+	.nav-list-item {
+		width:      100%;
+		text-align: center;
+	}
+}
+
 
 
 
