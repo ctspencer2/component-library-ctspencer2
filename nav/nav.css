@@ -1,47 +1,5 @@
-
-/* Button Style */
-.btn {
-    background: rgb(0, 88, 88);
-    display:inline-block;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    outline-offset: 4px;
-    border-radius: 12px;
-}
-
-.front {
-  display: block;
-  padding: 12px 42px;
-  border-radius: 12px;
-  font-size: 1.25em;
-  background: teal;
-  color: white;
-  transform: translateY(-6px);
-}
-
-/* Hover Button State */
-  /* .btn:hover {
-    color: #ffffff;
-    background-color: #000000;
-  } */
-
-
-/* Active Button State */
-  .button:active {
-    background-color: rgb(236, 89, 148);
-  }
-
-/* responsive media */
-  @media all and (max-width:30em){
-    .button{
-    display:block;
-    margin:0.4em auto;
-    }
-  }
-
 /* Navbar Styles */
-  .logo {
+.logo {
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
@@ -188,8 +146,3 @@
 		text-align: center;
 	}
 }
-
-
-
-
-
